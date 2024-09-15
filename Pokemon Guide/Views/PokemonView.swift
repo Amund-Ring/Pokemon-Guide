@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct PokemonView: View {
+    
+    var category: Category
+    
     var body: some View {
-        ScrollView() {
-            Text("PokemonView")
+        VStack() {
             
-        }.navigationTitle("Electric")
+            
+            Text("PokemonView")
+            Text(category.type)
+            
+            NavigationLink(destination: DetailView()) {
+                Text("Navigate to DetailView")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
+        }.navigationTitle(category.type).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    PokemonView()
+    PokemonView(category: Category(type: "Electric", pokemon: []))
 }

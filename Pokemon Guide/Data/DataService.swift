@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+
+struct DataService {
+    
+    
+    
+    
+    
+    func getData() -> [Category] {
+        return [
+            Category(type: "Electric", pokemon: []),
+            Category(type: "Grass", pokemon: []),
+            Category(type: "Fire", pokemon: []),
+            Category(type: "Water", pokemon: [])
+        ]
+    }
+}
