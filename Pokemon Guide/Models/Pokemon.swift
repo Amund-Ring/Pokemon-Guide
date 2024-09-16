@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Pokemon: Identifiable {
-    var id: UUID = UUID()
+struct Pokemon: Identifiable, Codable {
+    let id: UUID = UUID()
     let name: String
     let about: String
     let hp: Int

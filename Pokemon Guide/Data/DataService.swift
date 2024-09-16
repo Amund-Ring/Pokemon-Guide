@@ -9,17 +9,22 @@ import Foundation
 
 
 struct DataService {
-    
-    
-    
-    
-    
     func getData() -> [Category] {
-        return [
-            Category(type: "Electric", pokemon: []),
-            Category(type: "Grass", pokemon: []),
-            Category(type: "Fire", pokemon: []),
-            Category(type: "Water", pokemon: [])
-        ]
+        if let url = Bundle.main.url(forResource: "pokemonData", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let categories = try decoder.decode([Category].self, from: data)
+                
+                return categories
+            } catch {
+                print("Error decoding JSON: \(error)")
+                return []
+            }
+            
+        } else {
+            print("JSON file not found")
+            return []
+        }
     }
 }
