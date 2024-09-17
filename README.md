@@ -10,6 +10,8 @@ This app allows users to:
 - View a list of **Pokémon within a selected category**.
 - See **detailed information** about each Pokémon, including stats and descriptions.
 
+![Main view](/screenshots.png "Screenshots")
+
 ## Features and Skills Demonstrated
 
 - **SwiftUI Views and Navigation**
