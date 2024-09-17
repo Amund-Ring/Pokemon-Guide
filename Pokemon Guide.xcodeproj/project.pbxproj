@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C22F372C98D60A00C6123F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C22F362C98D60A00C6123F /* DataService.swift */; };
 		67E889522C959CE100101DF3 /* Pokemon_GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E889512C959CE100101DF3 /* Pokemon_GuideApp.swift */; };
 		67E889542C959CE100101DF3 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E889532C959CE100101DF3 /* CategoriesView.swift */; };
 		67E889562C959CE200101DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E889552C959CE200101DF3 /* Assets.xcassets */; };
@@ -14,12 +15,12 @@
 		67E889612C959DCE00101DF3 /* pokemonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 67E889602C959DCE00101DF3 /* pokemonData.json */; };
 		67E889632C959E8300101DF3 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E889622C959E8300101DF3 /* PokemonView.swift */; };
 		67E889652C959EA600101DF3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E889642C959EA600101DF3 /* DetailView.swift */; };
-		67E8896A2C959F5900101DF3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E889692C959F5900101DF3 /* DataService.swift */; };
 		67E8896C2C95A01B00101DF3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8896B2C95A01B00101DF3 /* Category.swift */; };
 		67E8896E2C95A03100101DF3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8896D2C95A03100101DF3 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67C22F362C98D60A00C6123F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		67E8894E2C959CE100101DF3 /* Pokemon Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E889512C959CE100101DF3 /* Pokemon_GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_GuideApp.swift; sourceTree = "<group>"; };
 		67E889532C959CE100101DF3 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		67E889602C959DCE00101DF3 /* pokemonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemonData.json; sourceTree = "<group>"; };
 		67E889622C959E8300101DF3 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 		67E889642C959EA600101DF3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		67E889692C959F5900101DF3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		67E8896B2C95A01B00101DF3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		67E8896D2C95A03100101DF3 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				67E889602C959DCE00101DF3 /* pokemonData.json */,
-				67E889692C959F5900101DF3 /* DataService.swift */,
+				67C22F362C98D60A00C6123F /* DataService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -183,9 +183,9 @@
 				67E8896E2C95A03100101DF3 /* Pokemon.swift in Sources */,
 				67E889632C959E8300101DF3 /* PokemonView.swift in Sources */,
 				67E889652C959EA600101DF3 /* DetailView.swift in Sources */,
+				67C22F372C98D60A00C6123F /* DataService.swift in Sources */,
 				67E889542C959CE100101DF3 /* CategoriesView.swift in Sources */,
 				67E889522C959CE100101DF3 /* Pokemon_GuideApp.swift in Sources */,
-				67E8896A2C959F5900101DF3 /* DataService.swift in Sources */,
 				67E8896C2C95A01B00101DF3 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

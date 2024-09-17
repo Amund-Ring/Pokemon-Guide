@@ -12,12 +12,34 @@ struct DetailView: View {
     let pokemon: Pokemon
     
     var body: some View {
-        VStack {
-            Text(pokemon.name)
-            Image(pokemon.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-        }.navigationTitle(pokemon.name)
+        
+        ScrollView {
+            VStack(alignment: .leading) {
+                HStack(alignment: .top) {
+                    
+                    Image(pokemon.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 200)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Stats")
+                            .font(.headline)
+                            .padding(.bottom, 20)
+                        Text("HP: \(pokemon.hp)")
+                        Text("Attack: \(pokemon.atk)")
+                        Text("Defense: \(pokemon.def)")
+                        Text("Special Attack: \(pokemon.spatk)")
+                        Text("Special Defense: \(pokemon.spdef)")
+                        Text("Speed: \(pokemon.spd)")
+                    }
+                }
+                
+                Text(pokemon.about)
+            }
+            .navigationTitle(pokemon.name)
+            .padding(.horizontal)
+        }
     }
 }
 
