@@ -1,3 +1,7 @@
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-000000?style=flat&logo=swift&logoColor=white)
+<br/>
+
 # Pokémon Guide
 
 A simple SwiftUI application that serves as a basic guide to different Pokémon categories and their respective Pokémon.
@@ -9,6 +13,8 @@ This app allows users to:
 - Browse different **Pokémon categories** (e.g., Electric, Grass).
 - View a list of **Pokémon within a selected category**.
 - See **detailed information** about each Pokémon, including stats and descriptions.
+
+![Main view](/screenshots.png "Screenshots")
 
 ## Features and Skills Demonstrated
 
